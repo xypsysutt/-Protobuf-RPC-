@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package myRPC.Lock;
+
+option cc_generic_services = true;
+
+// 打开文件的时候，与锁服务器交互检查文件是否有文件锁
+message Lock_Response {
+    int32 flag = 1; //1 上锁成功，2 已有锁
+}
+
+// 和client交互，将目标文件锁起来，防止别的客户修改或下载
+message LockInfo_Requst{
+    string filename = 1; 
+}
+
+message unLockInfo_Requst{
+    string filename = 1; 
+}
+service Lock_Server {
+  rpc Lock(LockInfo_Requst) returns(Lock_Response);
+  rpc unLock(unLockInfo_Requst) returns(Lock_Response);
+}
+

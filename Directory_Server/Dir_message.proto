@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package myRPC.DirServer;
+
+option cc_generic_services = true;
+
+// login 文件服务器上线时在目录服务器上进行注册
+message Login_Request{
+	// address = ip:port
+	string ip = 1; 
+	string port = 2;
+}
+message Login_Response{
+	int32 flag = 1;
+}
+// logout
+message Logout_Request{
+	string ip = 1;
+	string port = 2;
+}
+message Logout_Response{
+	int32 flag = 1;
+}
+// broadcast
+message ServiceInfo{
+	string Server_ID = 1;
+	string ip = 2;
+	string port = 3;
+}
+message ServerInfo_Response{
+	repeated ServiceInfo server_list=1;
+}
+message ServerInfo_Request{
+	int32 flag = 1;
+}
+
+service LoginServer {
+  rpc Login(Login_Request) returns(Login_Response);
+  rpc Logout(Logout_Request) returns(Logout_Response);
+  rpc ServerInfo(ServerInfo_Request) returns(ServerInfo_Response);
+
+}

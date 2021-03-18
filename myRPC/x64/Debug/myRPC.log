@@ -1,0 +1,48 @@
+﻿  rpc_channel.cc
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  rpc_channel_impl.cc
+D:\iTool\protobuf-3.14.0\src\google\protobuf\parse_context.h(211,17): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+D:\iDATA\分布式系统\hw6\myRPC\rpc_channel_impl.cc(42,59): warning C4267: “参数”: 从“size_t”转换到“google::protobuf::int32”，可能丢失数据
+D:\iDATA\分布式系统\hw6\myRPC\rpc_channel_impl.cc(46,56): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\iTool\protobuf-3.14.0\src\google\protobuf\parse_context.h(350,22): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+D:\iTool\protobuf-3.14.0\src\google\protobuf\parse_context.h(366): message : 查看对正在编译的函数 模板 实例化“const char *google::protobuf::internal::EpsCopyInputStream::AppendUntilEnd<google::protobuf::internal::EpsCopyInputStream::AppendString::<lambda_2a2a8cefb56710607aa8bf74eb61d0f6>>(const char *,const A &)”的引用
+          with
+          [
+              A=google::protobuf::internal::EpsCopyInputStream::AppendString::<lambda_2a2a8cefb56710607aa8bf74eb61d0f6>
+          ]
+  rpc_meta.pb.cc
+D:\iTool\protobuf-3.14.0\src\google\protobuf\parse_context.h(211,17): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+D:\iDATA\分布式系统\hw6\myRPC\rpc_meta.pb.cc(183,71): warning C4244: “=”: 从“google::protobuf::uint64”转换到“google::protobuf::int32”，可能丢失数据
+D:\iTool\protobuf-3.14.0\src\google\protobuf\parse_context.h(350,22): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+D:\iTool\protobuf-3.14.0\src\google\protobuf\parse_context.h(366): message : 查看对正在编译的函数 模板 实例化“const char *google::protobuf::internal::EpsCopyInputStream::AppendUntilEnd<google::protobuf::internal::EpsCopyInputStream::AppendString::<lambda_2a2a8cefb56710607aa8bf74eb61d0f6>>(const char *,const A &)”的引用
+          with
+          [
+              A=google::protobuf::internal::EpsCopyInputStream::AppendString::<lambda_2a2a8cefb56710607aa8bf74eb61d0f6>
+          ]
+  rpc_server.cc
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+  rpc_server_impl.cc
+D:\iTool\protobuf-3.14.0\src\google\protobuf\parse_context.h(211,17): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+D:\iDATA\分布式系统\hw6\myRPC\rpc_server_impl.cc(104,59): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\iTool\protobuf-3.14.0\src\google\protobuf\parse_context.h(350,22): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+D:\iTool\protobuf-3.14.0\src\google\protobuf\parse_context.h(366): message : 查看对正在编译的函数 模板 实例化“const char *google::protobuf::internal::EpsCopyInputStream::AppendUntilEnd<google::protobuf::internal::EpsCopyInputStream::AppendString::<lambda_2a2a8cefb56710607aa8bf74eb61d0f6>>(const char *,const A &)”的引用
+          with
+          [
+              A=google::protobuf::internal::EpsCopyInputStream::AppendString::<lambda_2a2a8cefb56710607aa8bf74eb61d0f6>
+          ]
+  正在生成代码...
+  myRPC.vcxproj -> D:\iDATA\分布式系统\hw6\Filesystem\x64\Debug\myRPC.lib
