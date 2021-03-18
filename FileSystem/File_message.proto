@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package myRPC.Filesystem;
+
+option cc_generic_services = true;
+
+message File_Request {
+  string file_name = 1;
+  string file_data = 2;
+  int64 flag = 3;
+}
+
+message File_Response {
+  string file_name = 1;
+  string file_data = 2;
+}
+
+message  Dir_Response {
+	repeated string filename = 1 ;
+}
+message bool_Response{
+	int32 flag = 1;
+}
+service File_Server {
+  rpc ls(File_Request) returns(Dir_Response);
+  rpc upload(File_Request) returns(bool_Response);
+  rpc download(File_Request) returns(File_Response);
+  rpc ddelete(File_Request) returns(bool_Response);
+  rpc mkdir(File_Request) returns(bool_Response);
+  rpc create(File_Request) returns(bool_Response);
+  rpc open(File_Request) returns(File_Response);
+}
+
